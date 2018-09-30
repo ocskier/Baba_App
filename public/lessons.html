@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Tables Page</title>
+  
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="/stylesheets/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="orange lighten-3" role="navigation" style="height: 80px">
+        <div class="nav-wrapper container">
+          <!-- <a id="logo-container" href="#" class="brand-logo" ><img src="" style="width:48px"></a> -->
+          <div class="left hide-on-med-and-down">
+            <div><a href="#" style="line-height: 80px;"><h4>Welcome to Aristotle</h4></a></div>
+          </div>
+          <div class="center hide-on-med-and-up">
+              <a href="#" style="line-height: 80px;"><h4>Aristotle</h4></a>
+          </div>
+          <a href="/profile/"  class="hide-on-med-and-down" style="line-height: 80px;top: 0;left: 47%;position: absolute;">My Profile</a>
+          <ul id="nav-mobile" class="sidenav">
+            <li><a href="/profile/">My Profile</a></li>
+            <li><a href="/logout">Logout</a></li>
+          </ul>
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger" style="top: -10px;left: 0;position: absolute"><i class="material-icons">menu</i></a>
+          <div class="member-name-wrapper right pull-right hide-on-med-and-down" style="font-size: 1.68rem;"><span class="member-name"></span>
+            <a href="/logout">Logout</a>
+          </div>
+        </div>
+    </nav>
+
+    <h4 class="center">Lessons</h4>
+    <div id = "lessons-row" class="row carousel valign-wrapper">
+      <div id="modal1" class="modal">
+          <div id="matchCard" class="modal-content" style="width:85%;margin:0 auto">
+              <div class="modal-content" style="padding: 0 8px">
+                <h4 class="center">Lesson</h4>
+                <p class="grey-text text-darken-4" style="font-size: 18px"></p>
+              </div>
+              <div class="modal-footer">
+                  <a href="#!" class="modal-close waves-effect waves-green left">Back</a>
+                  <a href="#!" class="modal-close waves-effect waves-green" id="modal-save">Save</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    
+  
+
+    <footer class="page-footer orange lighten-3">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <!-- <h5 class="white-text">Company Bio</h5> -->
+              <p class="grey-text text-lighten-4">We are a team of college students</p>
+            </div>
+            <!-- <div class="col l3 s12">
+              <h5 class="white-text">Settings</h5>
+              <ul>
+                <li><a href="/api/friends" class="white-text">API Table Link</a></li>
+              </ul>
+            </div>
+            <div class="col l3 s12">
+              <h5 class="white-text">Connect</h5>
+              <ul>
+                <li><a href="/api/match" class="white-text">API Match</a></li>
+              </ul>
+            </div> -->
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          Made by <a class="cyan-text text-darken-2" href="http://materializecss.com">Materialize</a>
+          </div>
+        </div>
+      </footer>
+    <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>           
+      <script type="text/javascript" src="/js/signup_passport.js"></script>
+      <script type="text/javascript" src="/js/signup_2.js"></script>
+      <script type="text/javascript" src="/js/lessons.js"></script>
+      <script>
+        $(document).ready(function(){
+          setTimeout(function(){
+            console.log(1);
+          $('.carousel').carousel();
+          $('.sidenav').sidenav();
+          M.AutoInit();
+          },600);
+        });
+      </script>
+    </body>
+    
+    </html>
+    

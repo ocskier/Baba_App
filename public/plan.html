@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Tables Page</title>
+  
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="/stylesheets/style.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <nav class="orange lighten-3" role="navigation" style="height: 100px">
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo" ><img src="" style="width:48px"></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#" style="line-height: 80px;">Link</a></li>
+          </ul>
+    
+          <ul id="nav-mobile" class="sidenav">
+            <li><a href="#">Navbar Link</a></li>
+          </ul>
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <div class="member-name-wrapper pull-right">Welcome <span class="member-name"></span>
+            <a href="/logout">Logout</a>
+          </div>
+        </div>
+    </nav>
+
+    <div id = "plans-row" class="row valign-wrapper" style="margin-top:20px">
+      
+      <div class="card" style="width:260px;float: left;border: 2px solid;margin: 5px"><p>What is Lorem Ipsum?
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.></p></div>
+      <div class="card" style="width:260px;float: left;border: 2px solid;margin: 5px"><p>What is Lorem Ipsum?
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.></p></div>
+      <div class="card" style="width:260px;float: left;border: 2px solid;margin: 5px"><p>What is Lorem Ipsum?
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.></p></div>
+
+    </div>
+
+
+  
+
+    <footer class="page-footer orange lighten-3">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <!-- <h5 class="white-text">Company Bio</h5> -->
+              <p class="grey-text text-lighten-4">We are a team of college students</p>
+            </div>
+            <!-- <div class="col l3 s12">
+              <h5 class="white-text">Settings</h5>
+              <ul>
+                <li><a href="/api/friends" class="white-text">API Table Link</a></li>
+              </ul>
+            </div>
+            <div class="col l3 s12">
+              <h5 class="white-text">Connect</h5>
+              <ul>
+                <li><a href="/api/match" class="white-text">API Match</a></li>
+              </ul>
+            </div> -->
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          Made by <a class="cyan-text text-darken-2" href="http://materializecss.com">Materialize</a>
+          </div>
+        </div>
+    </footer>
+    
+    <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>    
+      <script type="text/javascript" src="/js/signup_passport.js"></script>
+      <script type="text/javascript" src="/js/signup_2.js"></script>
+      <script>
+
+          function runPlansQuery() {
+          // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
+            $.ajax({ url: "/api/user/plans", method: "GET" }).then(
+              function(data) {
+                // Here we then log the tableData to console, where it will show up as an object.
+                console.log(data);
+                console.log("------------------------------------");
+
+                // Loop through and display each of the customers
+                for (var i = 0; i < data.length; i++) {
+                  // Get a reference to the tableList element and populate it with tables
+                  var lessonsList = $("#plans-row");
+
+                  varNewPlanDiv = $('<div class="card" style="width:260px;float: left;border: 2px solid;margin: 5px">')
+                    .append($('<p class="ctr-txt white-text">'+data[i].planText+'</p>')); //data[i].text
+                  lessonsList.append(newCardA);
+                }
+              }
+            );
+          }
+
+          runPlansQuery();
+
+          $("#plans-row").on("click", function(event) {
+            //   var url = $(this).data("url");
+            window.location.href='/members/lessons/';
+          });
+
+          (function($){
+            $(function(){
+  
+              $('.sidenav').sidenav();
+              M.AutoInit();
+              
+            }); // end of document ready
+          })(jQuery); // end of jQuery name space
+        </script>
+    
+    </body>
+    
+    </html>
+    

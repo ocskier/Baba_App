@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Tables Page</title>
+  
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="/stylesheets/style.css" rel="stylesheet">
+  
+</head>
+
+<body background ="images/sharon-mccutcheon-532782-unsplash.jpg" style="no-repeat center center fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+  
+  <nav class="orange lighten-3" role="navigation" style="height: 80px">
+      <div class="nav-wrapper container">
+        <!-- <a id="logo-container" href="#" class="brand-logo" ><img src="" style="width:48px"></a> -->
+        <div class="left hide-on-med-and-down">
+          <div><a href="#" style="line-height: 80px;"><h4>Welcome to Aristotle</h4></a></div>
+        </div>
+        <div class="center hide-on-med-and-up">
+            <a href="#" style="line-height: 80px;"><h4>Aristotle</h4></a>
+        </div>
+        <a href="/lessons/"  class="hide-on-med-and-down" style="line-height: 80px;top: 0;left: 47%;position: absolute;">Search Lessons</a>
+        <ul id="nav-mobile" class="sidenav">
+          <li><a href="/lessons/">Search Lessons</a></li>
+          <li><a href="/logout">Logout</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger" style="top: -10px;left: 0;position: absolute"><i class="material-icons">menu</i></a>
+        <div class="member-name-wrapper right pull-right hide-on-med-and-down" style="font-size: 1.68rem;"><span class="member-name"></span>
+          <a href="/logout">Logout</a>
+        </div>
+      </div>
+  </nav>
+
+  <!-- *******************Add documents************** -->
+    <div class="wrapper">
+
+      <!-- START CONTENT -->
+      <section id="content">
+        <!--start container-->
+        <div class="container">
+          <div id="profile-page" class="section">
+            <!-- profile-page-header -->
+            <div id="profile-page-header" class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <!-- <img class="activator" src="../../images/gallary/23.png" alt="user background"> -->
+              </div>
+              <figure class="card-profile-image">
+                <img src="https://via.placeholder.com/150x150" alt="profile image" class="circle z-depth-2 responsive-img activator gradient-45deg-light-blue-cyan gradient-shadow">
+                <div style="top: 10%;right: 3%;position: absolute;"><g:sharetoclassroom url="http://url-to-share" size="48"></g:sharetoclassroom></div>
+              </figure>
+              <div class="card-content">
+                <div class="row pt-2">
+                  <div class="col s12 m3 offset-m2">
+                    <h4 id="user-name" class="card-title grey-text text-darken-4">Roger Waters</h4>
+                    <p class="medium-small grey-text">Middle School Science Teacher</p>
+                  </div>
+                  <div class="col s12 m2 center-align">
+                    <h4 id="subject-name" class="card-title grey-text text-darken-4">Science</h4>
+                    <p class="medium-small grey-text">Subject</p>
+                  </div>
+                  <div class="col s12 m2 center-align">
+                    <h4 id="grade-name" class="card-title grey-text text-darken-4">Middle School</h4>
+                    <p class="medium-small grey-text">Grade Level</p>
+                  </div>
+                  <div class="col s12 m1 right-align">
+                    <a class="btn-floating activator waves-effect waves-light rec accent-2 right">
+                      <i class="material-icons">perm_identity</i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-reveal">
+                <p>
+                  <span class="card-title grey-text text-darken-4">Roger Waters
+                    <i class="material-icons right">close</i>
+                  </span>
+                  <span>
+                    <i class="material-icons cyan-text text-darken-2">perm_identity</i> Teacher</span>
+                </p>
+                <!-- <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p> -->
+                <p>
+                  <i class="material-icons cyan-text text-darken-2">perm_phone_msg</i> +1 (555) 555 8989</p>
+                <p>
+                  <i class="material-icons cyan-text text-darken-2">email</i> mail@domain.com</p>
+                <p>
+                  <i class="material-icons cyan-text text-darken-2">cake</i> 18th June 1990</p>
+                <p>
+                  <!-- <i class="material-icons cyan-text text-darken-2">airplanemode_active</i> BAR - AUS</p> -->
+              </div>
+            </div>
+
+
+            
+            <!--/ profile-page-header -->
+            <!-- profile-page-content -->
+            <div id="profile-page-content" class="row">
+              <!-- profile-page-sidebar-->
+              <div id="profile-page-sidebar" class="col s4 m4">
+                <!-- Profile About  -->
+                <div class="card cyan">
+                  <div class="card-content white-text">
+                    <span class="card-title">About Me!</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat semper odio, non interdum metus consectetur vitae. Duis metus metus, lobortis ac vehicula quis, elementum at risus. Ut arcu turpis, eleifend vel urna at, fringilla eleifend nisl. Nam eget mollis felis, in luctus arcu. Maecenas ex leo, semper in nisl ac, facilisis convallis risus.
+                    </p>
+                  </div>
+                </div>
+                <!-- Profile About  -->
+                <!-- Profile About Details  -->
+                <ul id="profile-page-about-details" class="collection z-depth-1">
+                  <li class="collection-item">
+                    <div class="row">
+                      <div class="col s5">
+                        <i class="material-icons left">poll</i> Skills</div>
+                      <div class="col s7 right-align">Super awesome teaching powers</div>
+                    </div>
+                  </li>
+                  <li class="collection-item">
+                    <div class="row">
+                      <div class="col s5">
+                        <i class="material-icons left">domain</i> Lives in</div>
+                      <div class="col s7 right-align">Durham, NC, USA</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              
+              
+                <!-- Lesson List -->
+                <div id="lesson-list" >
+                  <div class="col s4">                  
+                      <div class="card-profile-title">
+                        <div class="row">
+                          <div id="savedLessonsRow" class="col s12 collection">
+                                
+                            <div id="modal1" class="modal">
+                              <div id="matchCard" class="modal-content" style="width:85%;margin:0 auto">
+                                  <div class="modal-content" style="padding: 0 8px">
+                                    <h4 class="center">Lesson</h4>
+                                    <p class="grey-text text-darken-4" style="font-size: 18px"></p>
+                                  </div>
+                                  <div class="modal-footer">
+                                      <a href="#!" class="modal-close waves-effect waves-green left">Back</a>
+                                  </div>
+                              </div>
+                          </div>                 
+                          </div>
+                        </div>
+                      </div>                                         
+                  </div>
+                </div>
+                
+                <!-- Lesson List -->
+                <div id="lesson-input" >
+                    <div class="col s4">                  
+                        <div class="card-profile-title">
+                          <div class="row">
+                            <div class="col s12 card">
+                                <div class="row">
+                                    <form class="col s12">
+                                      <div class="row">
+                                        <div class="input-field col s12">
+                                          <textarea id="text-title" class="materialize-textarea"></textarea>
+                                          <label for="textarea1">Title</label>
+                                        </div>
+                                      </div>                           
+                                    </div>  
+                                      <div class="row center">
+                                        <div class="input-field col s12">
+                                          <textarea id="text-body" class="materialize-textarea"></textarea>
+                                          <label for="textarea1">Lesson</label>
+                                                    <!-- Subject -->           
+                                          <div class="input-field col s12">
+                                              <select class="browser-default" id="subject-input-lesson">
+                                                <option value="" disabled selected>Subject</option>
+                                                <option value="math">Math</option>
+                                                <option value="science">Science</option>
+                                                <option value="socialStudies">Social Studies</option>
+                                                <option value="englishLiterature">English/Literature</option>
+                                
+                                              </select>
+                                              <!-- <label>Materialize Select</label> -->
+                                            </div>
+                                            <!-- Age Group -->
+                                            <div class="input-field col s12">
+                                              <select class="browser-default" id="age-input-lesson">
+                                                <option value="" disabled selected>Age Group</option>
+                                                <option value="elementary">Elementary</option>
+                                                <option value="middleSchool">Middle School</option>
+                                                <option value="highSchool">High School</option>
+                                              </select>
+                                              <!-- <label>Materialize Select</label> -->
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-default blue-grey darken-1" id="submit-text">Submit</button>
+                                      </div>
+                                    </form>
+                                  </div>               
+                            </div>
+                          </div>
+                        </div>                                         
+                    </div>
+                  </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+    </div>
+
+
+  <footer class="page-footer orange lighten-3">
+      <div class="container">
+        <!-- <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Company Bio</h5>
+            <p class="grey-text text-lighten-4">We are a team of coders</p>
+          </div>
+        </div> -->
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        Made by <a class="cyan-text text-darken-2" href="http://materializecss.com">Materialize</a>
+        </div>
+      </div>
+  </footer>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script type="text/javascript" src="/js/signup_passport.js"></script>
+  <script type="text/javascript" src="/js/signup_2.js"></script>
+  <script type="text/javascript" src="/js/profile.js"></script>   
+  <script>
+    (function($){
+      $(function(){
+
+        $('.sidenav').sidenav();
+        
+        M.AutoInit();
+        
+      }); // end of document ready
+    })(jQuery); // end of jQuery name space
+  </script>
+
+</body>
+  
+</html>

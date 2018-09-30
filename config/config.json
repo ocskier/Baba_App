@@ -1,0 +1,20 @@
+{
+  "development": {
+    "username": "ueg4kx8vjm8gzqtu",
+    "password": "mz13zdfvxzg0ehrd",
+    "database": "opbdr6d6ad82utzr",
+    "host": "dyud5fa2qycz1o3v.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "1234",
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql"
+  }
+}

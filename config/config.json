@@ -1,9 +1,6 @@
 {
   "development": {
-    "username": "ueg4kx8vjm8gzqtu",
-    "password": "mz13zdfvxzg0ehrd",
-    "database": "opbdr6d6ad82utzr",
-    "host": "dyud5fa2qycz1o3v.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "use_env_variable": "LOCALHOST_URL",
     "dialect": "mysql"
   },
   "test": {
